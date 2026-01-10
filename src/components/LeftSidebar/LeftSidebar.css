@@ -5,6 +5,22 @@
     height: 100%;
 }
 
-.leftSidebar .header{
-    
+.leftSidebar .header {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.leftSidebar h1 {
+    font-size: 3rem;
+}
+
+.leftSidebar h2 {
+    font-size: 1.25rem;
+    padding-top: 12px;
+}
+
+.leftSidebar p {
+    padding-top: 16px;
+    width: 320px;
 }

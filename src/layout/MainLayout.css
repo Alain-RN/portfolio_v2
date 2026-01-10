@@ -2,16 +2,17 @@
     display: grid;
     grid-template-columns: 47.5% 53.5%;
     min-height: 100vh;
+    padding-inline: 48px;
 }
 
 .layout .left {
     position: sticky;
-    top: 96px;
-    height: calc(100vh - 192px);
+    top: 92px;
+    height: calc(100vh - 184px);
 }
 
 .layout .right {
-    padding-block: 96px;
+    padding-block: 92px;
     display: flex;
     flex-direction: column;
     gap: 60px;

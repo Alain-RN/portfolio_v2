@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 96px;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
