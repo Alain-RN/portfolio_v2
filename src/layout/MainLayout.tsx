@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import "./MainLayout.css"
 
 interface MainLayoutProps {
     left: ReactNode;
