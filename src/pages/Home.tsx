@@ -16,8 +16,6 @@ export default function Home() {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setActiveSection(entry.target.id);
-
-                        // Met à jour le hash pendant le scroll
                         window.history.replaceState(null, "", `#${entry.target.id}`);
                     }
                 });
@@ -32,7 +30,6 @@ export default function Home() {
             if (section) observer.observe(section);
         });
 
-        // Cleanup à la destruction du composant
         return () => observer.disconnect();
     }, []);
 
@@ -42,13 +39,13 @@ export default function Home() {
             left={<LeftSidebar activeSection={activeSection} />}
             right={
                 <>
-                    <section id="about" ref={(el) => (sectionRefs.current["about"] = el)}>
+                    <section id="about" ref={(el) => {(sectionRefs.current["about"] = el)}}>
                         <About />
                     </section>
-                    <section id="experience" ref={(el) => (sectionRefs.current["experience"] = el)}>
+                    <section id="experience" ref={(el) => {(sectionRefs.current["experience"] = el)}}>
                         <Experience />
                     </section>
-                    <section id="projects" ref={(el) => (sectionRefs.current["projects"] = el)}>
+                    <section id="projects" ref={(el) => {(sectionRefs.current["projects"] = el)}}>
                         <Projects />
                     </section>
                 </>

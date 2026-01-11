@@ -7,9 +7,13 @@ export default function Navbar({ activeSection }: NavbarProps) {
     return (
         <nav>
             {sections.map((id) => (
-                <div key={id} style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-                    <div className={`line ${activeSection === id ? "grow" : ""}`}></div>
-                    <a href={`#${id}`}>{id.charAt(0).toUpperCase() + id.slice(1)}</a>
+                <div className="element" key={id} >
+                    <a href={`#${id}`} 
+                        className={`${activeSection == id ? "selected" : ""}`} 
+                        style={{ display: "flex", alignItems: "center", gap: "14px" }} >
+                            <div className={`line ${activeSection === id ? "grow" : ""}`}></div>
+                            {id.toUpperCase()}
+                    </a>
                 </div>
             ))}
         </nav>

@@ -1,0 +1,8 @@
+.hover-icone {
+    color: gray;
+    transition: 0.15s ease-in;
+}
+
+.hover-icone:hover {
+    color: white;
+}

@@ -8,7 +8,7 @@
 .leftSidebar .header {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 64px;
 }
 
 .leftSidebar h1 {
