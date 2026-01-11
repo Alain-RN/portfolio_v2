@@ -1,0 +1,41 @@
+.experience-card {
+    display: grid;
+    grid-template-columns: 26% 74%;
+    padding: 16px 22px;
+    transition: 0.115s ease-in;
+    border-radius: .25rem;
+    border-top: solid 1px transparent;
+}
+
+.experience-card:hover {
+    background: #97979710;
+    border-top: solid 1px rebeccapurple;
+}
+
+.experience-card .duration {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.experience-card .description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.experience-card .title {
+    font-size: 1rem;
+}
+
+.experience-card .paragraph {
+    font-size: 0.9rem;
+}
+
+.experience-card .skills {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+

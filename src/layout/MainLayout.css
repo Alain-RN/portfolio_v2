@@ -1,6 +1,7 @@
 .layout {
     display: grid;
-    grid-template-columns: 47.5% 53.5%;
+    grid-template-columns: 44.655% 55.355%;
+    gap: 28px;
     min-height: 100vh;
     padding-inline: 48px;
 }
