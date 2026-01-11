@@ -8,19 +8,25 @@
 .leftSidebar .header {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 72px;
+    padding-bottom: 38px;
 }
 
 .leftSidebar h1 {
     font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    color: white;
 }
 
 .leftSidebar h2 {
     font-size: 1.25rem;
-    padding-top: 12px;
+    padding-top: 16px;
 }
 
 .leftSidebar p {
     padding-top: 16px;
     width: 320px;
+    line-height: 1.;
+    color: rgb(163, 163, 163);
 }

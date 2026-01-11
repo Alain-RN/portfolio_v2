@@ -4,6 +4,7 @@ import LeftSidebar from "../components/LeftSidebar/LeftSidebar";
 import About from "../sections/About/About";
 import Experience from "../sections/Experience/Experience";
 import Projects from "../sections/Projects/Projects";
+import "./Home.css"
 
 export default function Home() {
     const [activeSection, setActiveSection] = useState("about");

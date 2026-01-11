@@ -7,11 +7,12 @@ interface LeftSidebarProps {
 }
 
 function LeftSidebar({activeSection}: LeftSidebarProps) {
+    
     return (
         <div className="leftSidebar">
             <div className="header">
                 <div>
-                    <h1>Noelisoa Alain</h1>
+                    <a href="#"><h1>Noelisoa Alain</h1></a>
                     <h2>Full Stack Developpeur</h2>
                     <p>I build accessible, pixel-perfect digital experiences for the web.</p>
                 </div>

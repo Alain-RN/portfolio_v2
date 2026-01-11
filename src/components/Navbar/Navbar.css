@@ -5,6 +5,7 @@ nav {
 }
 
 .element:hover {
+    width: fit-content; 
     .line {
         border-color: white;
         width: 64px;
@@ -16,7 +17,7 @@ nav {
 }
 
 .line {
-    transition: 0.18s ease;
+    transition: 0.22s ease;
     border-top: 1px solid gray;
     width: 32px;
     height: 0;
@@ -32,10 +33,12 @@ nav {
     border-color: white;
 }
 
-a { 
+a {
     color: gray;
+    letter-spacing: 1.2px;
     font-size: .75rem;;
     text-decoration: none;
+    transition: 0.18s ease;
     font-weight: 700;
     line-height: 1rem;
 }
