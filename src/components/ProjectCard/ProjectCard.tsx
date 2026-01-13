@@ -1,16 +1,25 @@
-import "./ExperienceCard.css";
-import TechnoCard from "../TechnoCard/TechnoCard";
-import { ArrowUpRight } from "lucide-react";
+import "./ProjectCard.css"
+import TechnoCard from "../TechnoCard/TechnoCard"
+import { ArrowUpRight } from "lucide-react"
 
-function ExperienceCard() {
+interface ProjectCardProps {
+    imgSrc : string,
+    title : string | null,
+    desciption : string | null,
+
+}
+
+function ProjectCard({imgSrc}: ProjectCardProps) {
     return (
-        <div className="experience-card">
+        <div className="project-card">
             <div className="line-top"></div>
             <div className="line-left"></div>
             <div className="line-bottom"></div>
             <div className="line-right"></div>
             {/* @---------- */}
-            <div className="duration">2024 — Present</div>
+            <div className="project-img">
+                <img src={imgSrc} alt="" />
+            </div>
             {/* @---------- */}
             <div className="description">
                 <div className="head">
@@ -36,7 +45,7 @@ function ExperienceCard() {
 
                 {/* @---------- */}
                 <div className="techno-list">
-                    <TechnoCard name="Java"/>``
+                    <TechnoCard name="Java"/>
                     <TechnoCard name="PHP"/>
                     <TechnoCard name="Rust"/>
                     <TechnoCard name="Vali"/>
@@ -45,7 +54,7 @@ function ExperienceCard() {
 
             </div>
         </div>
-    );
+    )
 }
 
-export default ExperienceCard;
+export default ProjectCard

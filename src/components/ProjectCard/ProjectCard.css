@@ -1,4 +1,4 @@
-.experience-card {
+.project-card {
     display: grid;
     grid-template-columns: 26% 74%;
     padding: 30px 24px 32px 24px;
@@ -8,7 +8,6 @@
     position: relative;
     overflow: hidden;
 }
-
 
 .line-top {
     transition: 0.15s ease-in;
@@ -46,16 +45,14 @@
     height: 0;
 }
 
-.experience-card:hover {
+.project-card:hover {
     background: #97979710;
-
     .line-bottom, .line-top {
         width: 65%
     }
     .line-left, .line-right {
         height: 60%;
     }
-
     .title {
         color: rebeccapurple;
     }
@@ -64,24 +61,35 @@
     }
 }
 
-.experience-card .duration {
-    font-size: 0.85rem;
-    font-weight: bold;
+.project-card .project-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    padding-top: 4px;
 }
 
-.experience-card .description {
+
+.project-card .project-img img {
+    width: 82%;
+    height: 82%;
+    object-fit: cover;
+    border: 2px solid rgba(128, 128, 128, 0.17);
+    border-radius: 4px;
+}
+
+.project-card .description {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.experience-card .arrow {
+.project-card .arrow {
     display: inline-flex;
     transition: transform 0.2s ease;
 }
 
 
-.experience-card .title {
+.project-card .title {
     font-size: 1.05rem;
     transition: 0.115s ease-in;
     display: flex;
@@ -89,11 +97,11 @@
     align-items:self-end;
 }
 
-.experience-card .paragraph {
+.project-card .paragraph {
     font-size: 0.9rem;
 }
 
-.experience-card .techno-list {
+.project-card .techno-list {
     display: flex;
     flex-direction: row;
     gap: 6px;

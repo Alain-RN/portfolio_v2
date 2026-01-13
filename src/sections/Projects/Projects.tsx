@@ -1,29 +1,12 @@
+import "./Projects.css"
+import ProjectCard from "../../components/ProjectCard/ProjectCard"
+import screenShoot from "../../assets/Capture d’écran du 2026-01-13 14-26-27-1.png"
+
 function Projects() {
     return(
-        <>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloribus, minima quis officiis, nobis cum ipsa, repudiandae hic molestiae cupiditate possimus 
-        eius excepturi. Cupiditate alias eius perspiciatis, consequatur, a blanditiis 
-        necessitatibus aut minima voluptates, excepturi sequi eligendi expedita? Tempore perferendis 
-        nobis ipsum ex debitis vitae, maxime quam delectus voluptas est.        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloribus, minima quis officiis, nobis cum ipsa, repudiandae hic molestiae cupiditate possimus 
-        eius excepturi. Cupiditate alias eius perspiciatis, consequatur, a blanditiis 
-        necessitatibus aut minima voluptates, excepturi sequi eligendi expedita? Tempore perferendis 
-        nobis ipsum ex debitis vitae, maxime quam delectus voluptas est.        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloribus, minima quis officiis, nobis cum ipsa, repudiandae hic molestiae cupiditate possimus 
-        eius excepturi. Cupiditate alias eius perspiciatis, consequatur, a blanditiis 
-        necessitatibus aut minima voluptates, excepturi sequi eligendi expedita? Tempore perferendis 
-        nobis ipsum ex debitis vitae, maxime quam delectus voluptas est.        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloribus, minima quis officiis, nobis cum ipsa, repudiandae hic molestiae cupiditate possimus 
-        eius excepturi. Cupiditate alias eius perspiciatis, consequatur, a blanditiis 
-        necessitatibus aut minima voluptates, excepturi sequi eligendi expedita? Tempore perferendis 
-        nobis ipsum ex debitis vitae, maxime quam delectus voluptas est.        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloribus, minima quis officiis, nobis cum ipsa, repudiandae hic molestiae cupiditate possimus 
-        eius excepturi. Cupiditate alias eius perspiciatis, consequatur, a blanditiis 
-        necessitatibus aut minima voluptates, excepturi sequi eligendi expedita? Tempore perferendis 
-        nobis ipsum ex debitis vitae, maxime quam delectus voluptas est.        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloribus, minima quis officiis, nobis cum ipsa, repudiandae hic molestiae cupiditate possimus 
-        eius excepturi. Cupiditate alias eius perspiciatis, consequatur, a blanditiis 
-        necessitatibus aut minima voluptates, excepturi sequi eligendi expedita? Tempore perferendis 
-        nobis ipsum ex debitis vitae, maxime quam delectus voluptas est.        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloribus, minima quis officiis, nobis cum ipsa, repudiandae hic molestiae cupiditate possimus 
-        eius excepturi. Cupiditate alias eius perspiciatis, consequatur, a blanditiis 
-        necessitatibus aut minima voluptates, excepturi sequi eligendi expedita? Tempore perferendis 
-        nobis ipsum ex debitis vitae, maxime quam delectus voluptas est.
-        </>
+        <div className="projects">
+            <ProjectCard imgSrc={screenShoot} title={null} desciption={null}/>
+        </div>
     )
 }
 
