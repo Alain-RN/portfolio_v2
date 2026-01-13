@@ -1,7 +1,7 @@
 .experience-card {
     display: grid;
     grid-template-columns: 26% 74%;
-    padding: 30px 24px 32px 24px;
+    padding: 30px 24px 38px 24px;
     transition: 0.115s ease-in;
     /* border-radius: .375rem; */
     cursor: pointer;
@@ -10,64 +10,78 @@
 }
 
 
-.line-top {
-    transition: 0.15s ease-in;
+.experience-card .line-top {
+    transition: width 0.15s ease-in;
     position: absolute;
-    border-top: 3px solid rebeccapurple;
+    border-top: 4px solid var(--violet-b);
+    box-shadow: 0 0 6px var(--violet-b);
     top: 0;
     left: 0;
     width: 0;
 }
 
-.line-right {
-    transition: 0.15s 0.15s ease-in;
-    border-right: 4px solid rebeccapurple;
+.experience-card .line-right {
+    transition: height 0.15s 0.15s ease-in;
     position: absolute;
+    border-right: 4px solid var(--violet-b);
+    box-shadow: 0 0 6px var(--violet-b);
     top: 0;
     right: 0;
     height: 0;
 }
 
-.line-bottom {
-    transition: 0.15s 0.30s ease-in;
-    border-bottom: 5px solid rebeccapurple;
+.experience-card .line-bottom {
+    transition: width 0.15s 0.30s ease-in;
     position: absolute;
+    border-bottom: 4px solid var(--violet-b);
+    box-shadow: 0 0 6px var(--violet-b);
     bottom: 0;
     right: 0;
     width: 0;
 }
 
-.line-left {
-    transition: 0.15s 0.45s ease-in;
+.experience-card .line-left {
+    transition: height 0.15s 0.45s ease-in;
     position: absolute;
-    border-left: 6px solid rebeccapurple;
+    border-left: 4px solid var(--violet-b);
+    box-shadow: 0 0 6px var(--violet-b);
     bottom: 0;
     left: 0;
     height: 0;
 }
 
 .experience-card:hover {
-    background: #97979710;
+    background: rgba(10, 0, 32, 0.3);
+    box-shadow: 0 0 12px var(--violet-b);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 
-    .line-bottom, .line-top {
-        width: 65%
+    .line-bottom,
+    .line-top {
+        width: 72.5%
     }
-    .line-left, .line-right {
-        height: 60%;
+
+    .line-left,
+    .line-right {
+        height: 75%;
     }
 
     .title {
-        color: rebeccapurple;
+        color: #fac881;
     }
+
     .arrow {
         transform: translate(4px, -4px);
+        color: var(--violet-c);
     }
 }
 
 .experience-card .duration {
     font-size: 0.85rem;
     font-weight: bold;
+    color: var(--violet-b);
+    letter-spacing: 0.5px;
 }
+
 
 .experience-card .description {
     display: flex;
@@ -86,7 +100,7 @@
     transition: 0.115s ease-in;
     display: flex;
     gap: 5px;
-    align-items:self-end;
+    align-items: self-end;
 }
 
 .experience-card .paragraph {
@@ -96,8 +110,6 @@
 .experience-card .techno-list {
     display: flex;
     flex-direction: row;
-    gap: 6px;
+    gap: 10px;
     margin-block: 8px;
 }
-
-

@@ -1,7 +1,7 @@
 .project-card {
     display: grid;
     grid-template-columns: 26% 74%;
-    padding: 30px 24px 32px 24px;
+    padding: 30px 24px 38px 24px;
     transition: 0.115s ease-in;
     /* border-radius: .375rem; */
     cursor: pointer;
@@ -9,55 +9,67 @@
     overflow: hidden;
 }
 
-.line-top {
-    transition: 0.15s ease-in;
+.project-card .line-top {
+    transition: width 0.15s ease-in;
     position: absolute;
-    border-top: 3px solid rebeccapurple;
+    border-top: 4px solid var(--violet-b);
+    box-shadow: 0 0 6px var(--violet-b);
     top: 0;
     left: 0;
     width: 0;
 }
 
-.line-right {
-    transition: 0.15s 0.15s ease-in;
-    border-right: 4px solid rebeccapurple;
+.project-card .line-right {
+    transition: height 0.15s 0.15s ease-in;
     position: absolute;
+    border-right: 4px solid var(--violet-b);
+    box-shadow: 0 0 6px var(--violet-b);
     top: 0;
     right: 0;
     height: 0;
 }
 
-.line-bottom {
-    transition: 0.15s 0.30s ease-in;
-    border-bottom: 5px solid rebeccapurple;
+.project-card .line-bottom {
+    transition: width 0.15s 0.30s ease-in;
     position: absolute;
+    border-bottom: 4px solid var(--violet-b);
+    box-shadow: 0 0 6px var(--violet-b);
     bottom: 0;
     right: 0;
     width: 0;
 }
 
-.line-left {
-    transition: 0.15s 0.45s ease-in;
+.project-card .line-left {
+    transition: height 0.15s 0.45s ease-in;
     position: absolute;
-    border-left: 6px solid rebeccapurple;
+    border-left: 4px solid var(--violet-b);
+    box-shadow: 0 0 6px var(--violet-b);
     bottom: 0;
     left: 0;
     height: 0;
 }
 
 .project-card:hover {
-    background: #97979710;
+    background: rgba(10, 0, 32, 0.3);
+    box-shadow: 0 0 12px var(--violet-b);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    
     .line-bottom, .line-top {
-        width: 65%
+        width: 72.5%
     }
     .line-left, .line-right {
-        height: 60%;
+        height: 75%;
     }
     .title {
-        color: rebeccapurple;
+        color: #fac881;
     }
     .arrow {
         transform: translate(4px, -4px);
+        color: var(--violet-c);
+    }
+    .project-img img {
+        border: 2px solid var(--violet-b);
+        opacity: 1;
     }
 }
 
@@ -70,10 +82,12 @@
 
 
 .project-card .project-img img {
+    transition: 0.2s ease;
+    opacity: 0.65;
     width: 82%;
     height: 82%;
     object-fit: cover;
-    border: 2px solid rgba(128, 128, 128, 0.17);
+    border: 2px solid var(--violet-b);
     border-radius: 4px;
 }
 
@@ -85,7 +99,7 @@
 
 .project-card .arrow {
     display: inline-flex;
-    transition: transform 0.2s ease;
+    transition: 0.2s ease;
 }
 
 
@@ -104,7 +118,7 @@
 .project-card .techno-list {
     display: flex;
     flex-direction: row;
-    gap: 6px;
+    gap: 10px;
     margin-block: 8px;
 }
 

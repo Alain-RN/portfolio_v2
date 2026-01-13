@@ -36,7 +36,7 @@ function ExperienceCard() {
 
                 {/* @---------- */}
                 <div className="techno-list">
-                    <TechnoCard name="Java"/>``
+                    <TechnoCard name="Java"/>
                     <TechnoCard name="PHP"/>
                     <TechnoCard name="Rust"/>
                     <TechnoCard name="Vali"/>
