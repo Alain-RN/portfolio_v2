@@ -5,7 +5,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
     const sections = [
         ["about", "À propos"],
         ["experience", "Expérience"],
-        ["projects", "Contact"]
+        ["projects", "projets"]
     ];
 
     return (

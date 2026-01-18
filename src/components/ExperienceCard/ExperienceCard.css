@@ -1,7 +1,7 @@
 .experience-card {
     display: grid;
     grid-template-columns: 26% 74%;
-    padding: 30px 24px 38px 24px;
+    padding: 30px 24px 30px 24px;
     transition: 0.115s ease-in;
     /* border-radius: .375rem; */
     cursor: pointer;
