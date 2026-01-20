@@ -37,6 +37,10 @@
         font-size: 2.5rem;
     }
 
+    .leftSidebar .header {
+        padding-bottom: 24px;
+    }
+
     .leftSidebar h2 {
         font-size: 1.2rem;
     }

@@ -40,7 +40,7 @@
 /* Mobile */
 @media (max-width: 480px) {
     .layout {
-        padding-inline: 8px;
+        padding-inline: 4px;
     }
 
     .layout .left {

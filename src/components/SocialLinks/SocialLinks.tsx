@@ -10,7 +10,7 @@ export default function SocialLinks() {
     return (
         <div style={{ display: "flex", gap: "20px" }}>
             {
-                icones.map( (icone)=> <IconeLink url="/" LinkIcone={icone}/>)
+                icones.map( (icone, i)=> <IconeLink url="/" key={i} LinkIcone={icone}/>)
             }
         </div>
     );

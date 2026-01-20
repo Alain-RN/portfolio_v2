@@ -39,6 +39,7 @@ function ExperienceCard() {
                     <TechnoCard name="Java"/>
                     <TechnoCard name="PHP"/>
                     <TechnoCard name="Rust"/>
+                    <TechnoCard name="JavaScript"/>
                     <TechnoCard name="Vali"/>
                 </div>
                 {/* @---------- */}
