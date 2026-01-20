@@ -18,3 +18,33 @@
     flex-direction: column;
     gap: 60px;
 }
+
+/* Responsive */
+
+/* Laptop */
+@media (max-width: 1024px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 24px;
+    }
+
+    .layout .left {
+        top: 64px;
+        position: relative;
+        height: fit-content;
+        padding-inline: 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .layout {
+        padding-inline: 4px;
+    }
+
+    .layout .left {
+        top: 60px;
+    }
+}
+

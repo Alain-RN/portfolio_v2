@@ -1,8 +1,18 @@
 .techno-card {
-    font-size: .75rem;
-    background: rebeccapurple;
+    font-size: 0.75rem;
+    color: var(--violet-b); /* texte violet néon doux */
+    background-color: rgba(18, 4, 88, 0.5); /* fond semi-transparent */
     padding: 4px 12px;
-    border-radius: 666px;
-    font-weight: bolder;
-    letter-spacing: 1.1px;
+    border-radius: 666px; /* moins “pill” */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+
+    /* Bordure fine néon */
+    border: 1px solid var(--violet-b);
+
+    /* Glow subtil */
+    box-shadow: 0 0 4px var(--violet-b);
+    
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }

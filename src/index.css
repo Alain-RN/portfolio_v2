@@ -1,27 +1,62 @@
-html {
-    scroll-behavior: smooth;
-}
-
-section {
-    scroll-margin-top: 100px;
-}
-
-#experience {
-  scroll-margin-top: 80px;
-}
-
 :root {
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(16, 25, 46);
+  color-scheme: dark;
+
+  /* Texte */
+  --text-main: rgba(255, 255, 255, 0.88);
+  --text-subtle: rgba(200, 200, 255, 0.7);
+
+  /* Background */
+  --bg-dark: #0a0020;
+  --bg-gradient-start: #0a0020;
+  --bg-gradient-end: #1c0f40;
+
+  /* Couleurs néon */
+  --rose-a: #ff124f;
+  --rose-b: #ff00a0;
+  --rose-c: #fe75fe;
+
+  --violet-a: #7a04eb;
+  --violet-b: #b073ff;
+
+  --bleu-a: #120458;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
+  background: linear-gradient(
+    180deg,
+    var(--bg-gradient-start),
+    var(--bg-gradient-end)
+  );
+  color: var(--text-main);
+  font-family: 'Manrope', sans-serif;
   min-width: 320px;
   min-height: 100vh;
+  line-height: 1.6;
 }
 
-*{
-  margin: 0;
+section {
+  scroll-margin-top: 100px;
 }
+
+#experience {
+  scroll-margin-top: 62px;
+}
+
+h1, h2, h3 {
+  color: var(--violet-b);
+  -webkit-text-stroke: 1px var(--violet-b);
+  text-shadow:
+    0 0 1.5px var(--violet-a),
+    0 0 4px var(--violet-b);
+}
+

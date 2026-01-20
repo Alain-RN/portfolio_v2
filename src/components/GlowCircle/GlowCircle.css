@@ -1,13 +1,23 @@
 .circle {
-    background: radial-gradient(circle,
-            rgba(24, 40, 85, 0.453) 0%,
-            rgba(24, 40, 85, 0.292) 40%,
-            rgba(17, 28, 59, 0) 60%);
     width: 1000px;
     height: 1000px;
     border-radius: 50%;
     position: fixed;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
     pointer-events: none;
+
+    /* Dégradé fluide avec couleur intermédiaire */
+    background: radial-gradient(
+        circle,
+        var(--bleu-a) 0%,            /* centre sombre */
+        rgba(123, 4, 235, 0.312) 50%,  /* violet doux intermédiaire */
+        rgba(255, 18, 79, 0.1) 80%,  /* rose très léger */
+        transparent 100%              /* fade vers transparent */
+    );
+
+    filter: blur(80px);
+    opacity: 0.4;
 }

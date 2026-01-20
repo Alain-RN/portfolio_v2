@@ -1,0 +1,21 @@
+.section-title {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    top: 0;
+    padding: 20px ;
+    z-index: 10;
+    display: none;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .section-title {
+        display: block;
+        position: sticky;
+    }
+}
+
+
+
+
