@@ -3,10 +3,17 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     top: 0;
-    padding: 20px ;
+    font-size: 1rem;
+    padding: 18px 20px;
     z-index: 10;
     display: none;
     color: white;
+}
+
+footer p {
+    margin-inline: 20px;
+    font-size: .95rem;
+    color: rgba(255, 255, 255, 0.531);
 }
 
 @media (max-width: 1024px) {

@@ -38,7 +38,7 @@ body {
     var(--bg-gradient-end)
   );
   color: var(--text-main);
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
   min-width: 320px;
   min-height: 100vh;
   line-height: 1.6;
