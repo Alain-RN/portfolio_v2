@@ -29,7 +29,7 @@
     padding-top: 16px;
     width: 320px;
     line-height: 1.;
-    color: rgb(163, 163, 163);
+    color: rgba(255, 255, 255, 0.788);
 }
 
 @media (max-width: 480px) {

@@ -1,7 +1,7 @@
 .about {
     padding-inline: 20px;
     line-height: 1.55;
-    font-size: 1.02rem;
-    color: rgb(163, 163, 163);
+    font-size: .98rem;
+    color: rgba(255, 255, 255, 0.788);
     letter-spacing: 0.5px;
 }

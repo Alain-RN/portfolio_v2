@@ -40,18 +40,25 @@ export default function Home() {
             left={<LeftSidebar activeSection={activeSection} />}
             right={
                 <>
-                    <section id="about" ref={(el) => {(sectionRefs.current["about"] = el)}}>
+                    <section id="about" ref={(el) => { (sectionRefs.current["about"] = el) }}>
                         <h3 className="section-title">À PROPOS</h3>
                         <About />
                     </section>
-                    <section id="experience" ref={(el) => {(sectionRefs.current["experience"] = el)}}>
+                    <section id="experience" ref={(el) => { (sectionRefs.current["experience"] = el) }}>
                         <h3 className="section-title">EXPERIENCES</h3>
                         <Experience />
                     </section>
-                    <section id="projects" ref={(el) => {(sectionRefs.current["projects"] = el)}}>
+                    <section id="projects" ref={(el) => { (sectionRefs.current["projects"] = el) }}>
                         <h3 className="section-title">PROJETS</h3>
                         <Projects />
                     </section>
+                    <footer>
+                        <p>
+                            Conçu et codé dans Visual Studio Code par moi-même.
+                            Réalisé avec React et CSS pur, déployé via Vercel.
+                            Tous les textes utilisent la police Inter.
+                        </p>
+                    </footer>
                 </>
             }
         />
