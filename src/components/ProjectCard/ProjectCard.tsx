@@ -6,7 +6,6 @@ interface ProjectCardProps {
     imgSrc : string,
     title : string | null,
     desciption : string | null,
-
 }
 
 function ProjectCard({imgSrc}: ProjectCardProps) {

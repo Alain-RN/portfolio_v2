@@ -1,4 +1,4 @@
-import ExperienceCard from "../../components/ExperienceCard/ExperienceCard"
+import ExperienceCard from "../../ExperienceCard/ExperienceCard"
 function Experience() {
     return(
         <div style={{display:"flex", flexDirection:"column", gap:"24px"}}>

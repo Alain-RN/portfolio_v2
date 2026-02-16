@@ -1,0 +1,31 @@
+.repository-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-inline: 21px;
+    padding-top: 24px;
+    cursor: pointer;
+
+    .i-arrow {
+        transition: 0.2s ease-in-out;
+    }
+
+    button {
+        transition: 0.8s ease-in-out;
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        
+    }
+}
+
+.repository-link:hover .i-arrow {
+    transform: translateX(8px);
+}
+
+.repository-link:hover button {
+    text-underline-offset: 4px;
+    text-decoration: underline;
+}
