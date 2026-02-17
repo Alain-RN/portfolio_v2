@@ -3,11 +3,11 @@
     align-items: center;
     gap: 6px;
     padding-inline: 21px;
-    padding-top: 24px;
+    padding-top: 28px;
     cursor: pointer;
 
     .i-arrow {
-        transition: 0.2s ease-in-out;
+        transition: 0.1s ease-in-out;
     }
 
     button {
@@ -22,7 +22,7 @@
 }
 
 .repository-link:hover .i-arrow {
-    transform: translateX(8px);
+    transform: translateX(6px);
 }
 
 .repository-link:hover button {

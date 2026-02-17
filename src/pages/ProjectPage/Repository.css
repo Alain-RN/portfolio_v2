@@ -1,0 +1,42 @@
+.repository {
+    padding-inline: 48px;
+}
+
+.repository h1 {
+    color: white;
+    font-size: 3rem;
+    margin-top: -5px;
+}
+
+.repository-header {
+    padding-top: 92px;
+    padding-bottom: 46px;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    .i-arrow {
+        color: var(--violet-b);
+        filter: brightness(1.6);
+        transition: 0.1s ease-in-out;
+    }
+
+    button {
+        color: var(--violet-b);
+        filter: brightness(1.6);
+        transition: 0.8s ease-in-out;
+        border: none;
+        background: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.home-link:hover .i-arrow {
+    transform: translateX(-5px);
+}
