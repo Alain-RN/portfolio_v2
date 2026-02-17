@@ -13,8 +13,8 @@ function LeftSidebar({activeSection}: LeftSidebarProps) {
             <div className="header">
                 <div>
                     <a href="#"><h1>Noelisoa Alain</h1></a>
-                    <h2>Full Stack Developpeur</h2>
-                    <p>I build accessible, pixel-perfect digital experiences for the web.</p>
+                    <h2>Développeur Full Stack</h2>
+                    <p>Je crée des expériences digitales modernes et performantes pour le web et le mobile.</p>
                 </div>
                 <Navbar activeSection={activeSection}/>
             </div>

@@ -1,0 +1,24 @@
+
+.project-row .techno-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block: 2px;
+}
+
+.project-row .year, a  {
+    color: #b073fff1;
+}
+
+.project-row .project {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.project-row a {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+

@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import MainLayout from "../layout/MainLayout";
-import LeftSidebar from "../components/LeftSidebar/LeftSidebar";
-import About from "../sections/About/About";
-import Experience from "../sections/Experience/Experience";
-import Projects from "../sections/Projects/Projects";
+import MainLayout from "../../layout/MainLayout";
+import LeftSidebar from "../../components/LeftSidebar/LeftSidebar";
+import About from "../../components/sections/About/About";
+import Experience from "../../components/sections/Experience/Experience";
+import Projects from "../../components/sections/Projects/Projects";
 import "./Home.css"
 
 export default function Home() {

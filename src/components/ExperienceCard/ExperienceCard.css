@@ -66,7 +66,12 @@
     }
 
     .title {
-        color: wheat;
+        color: white;
+        /* color: var(--violet-b); */
+        -webkit-text-stroke: 1px var(--violet-b);
+        text-shadow:
+            0 0 1.5px var(--violet-a),
+            0 0 4px var(--violet-b);
     }
 
     .arrow {
@@ -93,17 +98,15 @@
     font-size: 1.05rem;
     line-height: 1.3;
     color: white;
-    display: block; 
+    display: block;
 }
 
 .experience-card .arrow {
     display: inline-flex;
-    vertical-align:bottom;
+    vertical-align: bottom;
     transition: 0.2s ease;
     margin-left: 3px;
 }
-
-
 
 .experience-card .paragraph {
     font-size: 0.9rem;
@@ -135,7 +138,10 @@
         box-shadow: none;
     }
 
-    .line-top, .line-bottom, .line-left, .line-right {
+    .line-top,
+    .line-bottom,
+    .line-left,
+    .line-right {
         display: none;
     }
 }
