@@ -5,11 +5,21 @@ table {
     table-layout: fixed;
 }
 
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 tbody tr {
     border-top: 1px solid #b073ff23;
 }
 
 th {
+    padding-top: 20px;
     padding-bottom: 16px;
 }
 
@@ -18,10 +28,21 @@ td {
     padding-bottom: 28px;
 }
 
-th:nth-child(1) { width: 6%; }
-th:nth-child(2) { width: 28%; }
-th:nth-child(3) { width: 46%; }
-th:nth-child(4) { width: 20%; }
+th:nth-child(1) {
+    width: 6%;
+}
+
+th:nth-child(2) {
+    width: 28%;
+}
+
+th:nth-child(3) {
+    width: 46%;
+}
+
+th:nth-child(4) {
+    width: 20%;
+}
 
 tr {
     vertical-align: top;
@@ -39,7 +60,6 @@ tr {
         width: 4.5%;
     }
 }
-
 
 @media (max-width: 440px) {
     th:nth-child(1) {
