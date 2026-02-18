@@ -9,9 +9,14 @@ function Projects() {
     return(
         <div className="projects">
             <ProjectCard imgSrc={screenShoot} title={null} desciption={null}/>
-            <div className="repository-link" onClick={() => navigate("/projects")}>
-                <button>Voire tout mes projets</button>
-                <ArrowRight size={16} className="i-arrow"/>
+            <div className="repository-link-container">
+                <div 
+                    className="repository-link"
+                    onClick={() => navigate("/projects")}>
+                    <button>Voire tout mes projets</button>
+                    <ArrowRight size={16} className="i-arrow"/>
+                </div>
+
             </div>
         </div>
     )

@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 :root {
   color-scheme: dark;
 
@@ -10,7 +31,6 @@
   --bg-gradient-start: #0a0020;
   --bg-gradient-end: #1c0f40;
 
-  /* Couleurs néon */
   --rose-a: #ff124f;
   --rose-b: #ff00a0;
   --rose-c: #fe75fe;
@@ -25,6 +45,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#root {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 html {
@@ -42,14 +69,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   line-height: 1.6;
-}
-
-section {
-  scroll-margin-top: 100px;
-}
-
-#experience {
-  scroll-margin-top: 62px;
 }
 
 /* h1, h2, h3{

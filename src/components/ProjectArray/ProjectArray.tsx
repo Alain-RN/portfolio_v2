@@ -9,10 +9,10 @@ export default function ProjectArray() {
             <table>
                 <thead>
                     <tr>
-                        <th style={{width: "7%"}}>Annee</th>
-                        <th style={{width: "27%"}}>Projet</th>
-                        <th style={{width: "46"}}>Technologie</th>
-                        <th style={{width: "20%"}}>Lien</th>
+                        <th>Annee</th>
+                        <th>Projet</th>
+                        <th className="hide-mobile hide-tablette">Technologie</th>
+                        <th className="hide-mobile">Lien</th>
                     </tr>
                 </thead>
                 <tbody>
