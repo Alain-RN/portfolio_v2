@@ -2,6 +2,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-size: .9rem;
+    table-layout: fixed;
 }
 
 tbody tr {
@@ -17,7 +18,31 @@ td {
     padding-bottom: 28px;
 }
 
+th:nth-child(1) { width: 6%; }
+th:nth-child(2) { width: 28%; }
+th:nth-child(3) { width: 46%; }
+th:nth-child(4) { width: 20%; }
+
 tr {
     vertical-align: top;
     text-align: left;
+}
+
+/* @media (max-width: 1024px) {
+    th:nth-child(1) {
+        width: 3%;
+    }
+} */
+
+@media (max-width: 640px) {
+    th:nth-child(1) {
+        width: 4.5%;
+    }
+}
+
+
+@media (max-width: 440px) {
+    th:nth-child(1) {
+        width: 8%;
+    }
 }

@@ -1,4 +1,4 @@
-export interface Project {
+interface Project {
     year: number;
     project: string;
     technologies: string[];
@@ -9,7 +9,7 @@ export const projects: Project[] = [
     {
         year: 2024,
         project: "Portfolio Personnel",
-        technologies: ["React", "TypeScript", "CSS", "Firebase", "Java", "Leo", 'Messi'],
+        technologies: ["React", "TypeScript", "CSS", "Firebase", "Java", "Leo", 'Messi', "supabase"],
         link: "https://github.com/noelisoa/portfolio"
     },
     {

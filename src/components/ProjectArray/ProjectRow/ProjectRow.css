@@ -1,15 +1,32 @@
-
 .project-row .techno-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
     margin-block: 2px;
+    padding-right: 16px;
 }
 
-.project-row .year, a  {
+.project-row .year, a {
     color: #b073fff1;
 }
+
+.project-row .link {
+    padding-block: 22px;
+}
+
+.project-row a {
+    display: flex;
+    gap: 4px;
+    width: fit-content;
+    /* background: #000; */
+    align-items: center;
+}
+
+.project-row a:hover {
+    filter: brightness(2);
+}
+
 
 .project-row .project {
     font-weight: 600;
@@ -20,5 +37,3 @@
     font-size: 0.85rem;
     font-weight: 600;
 }
-
-
