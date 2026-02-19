@@ -1,8 +1,26 @@
+.log-error-container {
+    padding: auto;
+    font-size: 1.1rem;
+    background: #00000085;
+    width: fit-content;
+    padding: 20px;
+}
+
+.log-error-container a {
+    font-size: 1.1rem;
+}
+
+.log-error-container div:nth-child(3) {
+    color: rgba(128, 128, 128, 0.987);
+    filter: brightness(2);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     font-size: .9rem;
     table-layout: fixed;
+    margin-bottom: 90px;
 }
 
 thead {
@@ -47,6 +65,13 @@ th:nth-child(4) {
 tr {
     vertical-align: top;
     text-align: left;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
 }
 
 /* @media (max-width: 1024px) {
