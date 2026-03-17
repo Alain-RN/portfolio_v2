@@ -8,7 +8,7 @@ interface IconeLinkProps {
 function IconeLink({url, LinkIcone}: IconeLinkProps) {
     return (
         <div>
-            <a href={url}>
+            <a href={url} target="_blank">
                 <LinkIcone size={24} className="hover-icone"/>
             </a>
         </div>
