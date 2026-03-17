@@ -12,7 +12,7 @@ const BASE_URL = "https://api.github.com";
 // Si tu as un token GitHub, mets-le dans ton .env
 const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
 
-async function fetchJSON(url: string) {
+async function fetchJSON(url: string, headers: { Authorization: string; } | undefined) {
     const response = await fetch(url, {
         headers: GITHUB_TOKEN
             ? { Authorization: `Bearer ${GITHUB_TOKEN}` }
@@ -25,12 +25,16 @@ async function fetchJSON(url: string) {
 
     return response.json();
 }
-
+// Local
 export async function fetchFormattedProjects(
     username: string
 ): Promise<ProjectRowType[]> {
+    const token = import.meta.env.VITE_GITHUB_TOKEN; // Token GitHub injecté via Vercel
+    const headers = token ? { Authorization: `token ${token}` } : undefined;
+
     const repos: GitHubRepo[] = await fetchJSON(
-        `${BASE_URL}/users/${username}/repos?per_page=100`
+        `${BASE_URL}/users/${username}/repos?per_page=100`,
+        headers
     );
 
     const filteredRepos = repos.filter((repo) => !repo.fork);
@@ -41,7 +45,8 @@ export async function fetchFormattedProjects(
 
             try {
                 const languagesData = await fetchJSON(
-                    `${BASE_URL}/repos/${username}/${repo.name}/languages`
+                    `${BASE_URL}/repos/${username}/${repo.name}/languages`,
+                    headers
                 );
                 technologies = Object.keys(languagesData);
             } catch {
@@ -49,7 +54,7 @@ export async function fetchFormattedProjects(
             }
 
             return {
-                year: new Date(repo.created_at).getFullYear(),
+                year: repo.created_at ? new Date(repo.created_at).getFullYear() : 0,
                 project: repo.name,
                 technologies,
                 link: repo.html_url,
@@ -61,3 +66,4 @@ export async function fetchFormattedProjects(
 
     return projects;
 }
+
