@@ -4,7 +4,8 @@ export default function Loading() {
     const points = generateHexagonPoints(50, 50, 40) // centre (50,50), rayon 40px
 
     return (
-        <svg className="loading"
+        <svg
+            className="loading"
             width="100"
             height="100"
             viewBox="0 0 100 100"
@@ -28,11 +29,12 @@ export default function Loading() {
                 />
             </polygon>
 
+            {/* Lettre N parfaitement centrée */}
             <text
                 x="50"
-                y="61"
+                y="53"
                 textAnchor="middle"
-                alignmentBaseline="middle"
+                dominantBaseline="middle"
                 fontSize="32"
                 fontWeight="700"
                 fill="var(--violet-b)"
