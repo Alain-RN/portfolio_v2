@@ -4,11 +4,12 @@ import { ArrowUpRight } from "lucide-react"
 
 interface ProjectCardProps {
     imgSrc : string,
-    title : string | null,
-    desciption : string | null,
+    title? : string,
+    desciption? : string,
+    tech: string[]
 }
 
-function ProjectCard({imgSrc}: ProjectCardProps) {
+function ProjectCard({imgSrc, title, desciption, tech}: ProjectCardProps) {
     return (
         <div className="project-card">
             <div className="line-top"></div>
@@ -25,7 +26,7 @@ function ProjectCard({imgSrc}: ProjectCardProps) {
 
                     {/* @---------- */}
                     <h3 className="title">
-                        Senior Frontend Engineer, Accessibility · Klaviyo <span className="arrow"><ArrowUpRight size={18}/></span>
+                        {title} <span className="arrow"><ArrowUpRight size={18}/></span>
                     </h3>
                     {/* @---------- */}
 
@@ -33,21 +34,16 @@ function ProjectCard({imgSrc}: ProjectCardProps) {
 
                 {/* @---------- */}
                 <p className="paragraph">
-                    Senior Frontend Engineer, Accessibility · Klaviyo Build and maintain
-                    critical components used to construct Klaviyo’s frontend, across the
-                    whole product. Work closely with cross-functional teams, including
-                    developers, designers, and product managers, to implement and advocate
-                    for best practices in web accessibility. JavaScript TypeScript React
+                    {desciption}
                 </p>
                 {/* @---------- */}
 
 
                 {/* @---------- */}
                 <div className="techno-list">
-                    <TechnoCard name="Java"/>
-                    <TechnoCard name="PHP"/>
-                    <TechnoCard name="Rust"/>
-                    <TechnoCard name="Vali"/>
+                    {tech.map((value, index) => 
+                        <TechnoCard name={value} key={index}/>
+                    )}
                 </div>
                 {/* @---------- */}
 
