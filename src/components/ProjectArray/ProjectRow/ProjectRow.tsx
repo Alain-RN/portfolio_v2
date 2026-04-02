@@ -2,6 +2,7 @@ import { BsGithub } from 'react-icons/bs';
 import { getSiteName } from '../../../utils/url';
 import TechnoCard from '../../TechnoCard/TechnoCard'
 import "./ProjectRow.css"
+import { ArrowUpRight } from 'lucide-react';
 
 interface ProjectRowProps {
     year: number,
@@ -15,9 +16,16 @@ export default function ProjectRow({ year, project, technologies, link }: Projec
     return (
         <tr className='project-row'>
             <td className='year'>{year}</td>
-            <td className='project'>{project}</td>
+            <td className='project'>
+                <span className='hide-mobile'>{project}</span>
+                <a className='d-none-md' href={link}>
+                    <div style={{display:"flex", gap: 6}}>
+                        {project} <ArrowUpRight className="arrow-link" size={18}/>
+                    </div>
+                </a>
+            </td>
             <td className='hide-mobile hide-tablette'>
-                <div className='techno-list '>
+                <div className='techno-list'>
                     {technologies.map((tech, index) => (
                         <TechnoCard key={index} name={tech} />
                     ))}

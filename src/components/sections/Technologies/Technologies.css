@@ -1,0 +1,16 @@
+.technologie-section {
+    padding-top: 32px;
+}
+
+.technologie-section .section-title {
+    padding-left: 0;
+    margin-bottom: 6px;
+}
+
+
+.technologie-section .row {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

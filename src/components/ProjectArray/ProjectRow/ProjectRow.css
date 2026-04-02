@@ -7,33 +7,50 @@
     padding-right: 16px;
 }
 
-.project-row .year, a {
+
+.project a {
+    font-size: 1rem;
+    padding-top: 4px;
+    font-weight: 700;
+    color: white;
+    text-underline-offset: 3px;
+}
+
+.project:hover .arrow-link {
+    transition: 0.2s ease-in-out;
+    transform: translate(4px, -4px);
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project-row .year,
+.project-row .link a {
     color: #b073fff1;
 }
 
+/* lien container */
 .project-row .link {
     padding-block: 22px;
 }
 
-.project-row a {
+/* style des liens */
+.project-row .link a {
     display: flex;
     gap: 4px;
     width: fit-content;
-    /* background: #000; */
     align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
-.project-row a:hover {
+.project-row .link a:hover {
     filter: brightness(2);
 }
 
-
+/* titre projet */
 .project-row .project {
     font-weight: 600;
     font-size: 1rem;
-}
-
-.project-row a {
-    font-size: 0.85rem;
-    font-weight: 600;
 }

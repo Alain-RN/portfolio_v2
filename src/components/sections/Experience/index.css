@@ -1,6 +1,6 @@
 .cv {
-        font-size: 1rem;
-        font-weight: 600;
+    font-size: 1rem;
+    font-weight: 600;
     display: flex;
     color: white;
     cursor: pointer;
@@ -19,6 +19,6 @@
 }
 
 .cv:hover .arrow {
-        transform: translate(4px, -4px);
-        color: var(--violet-c);
+    transform: translate(4px, -4px);
+    color: var(--violet-c);
 }

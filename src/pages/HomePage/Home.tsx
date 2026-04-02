@@ -44,14 +44,17 @@ export default function Home() {
                         <h3 className="section-title">À PROPOS</h3>
                         <About />
                     </section>
+
                     <section id="experience" ref={(el) => { (sectionRefs.current["experience"] = el) }}>
                         <h3 className="section-title">EXPERIENCES</h3>
                         <Experience />
                     </section>
+
                     <section id="projects" ref={(el) => { (sectionRefs.current["projects"] = el) }}>
                         <h3 className="section-title">PROJETS</h3>
                         <Projects />
                     </section>
+
                     <footer>
                         <p>
                             Conçu et codé dans Visual Studio Code par moi-même.
