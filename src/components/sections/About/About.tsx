@@ -1,3 +1,4 @@
+import Technologies from "../Technologies/Technologies"
 import "./About.css"
 function About() {
     return (
@@ -9,6 +10,7 @@ function About() {
             Expérimenté en React Native, je développe également des applications mobiles multiplateformes fluides et fonctionnelles. Curieux et proactif, je cherche toujours à explorer de nouveaux outils pour apporter rapidement de la valeur.<br />
             <br />
             Motivé, rigoureux et créatif, je suis prêt à relever des défis et contribuer à des projets innovants, en transformant les idées en produits concrets.
+            <Technologies />
         </div>
     )
 }
