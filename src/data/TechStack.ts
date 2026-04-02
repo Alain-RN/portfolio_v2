@@ -1,47 +1,54 @@
 export const techStack: techStackType[] = [
     {
         name: "React",
-        color: "#ffffff",
+        color: "##ffffff",
+
         icon: "react"
     },
     {
         name: "TypeScript",
-        color: "#ffffff",
+        color: "rgb(228, 228, 228)",
+
         icon: "ts"
     },
     {
         name: "Vite",
-        color: "#ffffff",
+        color: "rgb(228, 228, 228)",
+
         icon: "vite"
     },
     {
         name: "Tailwind CSS",
-        color: "#ffffff",
+        color: "rgb(228, 228, 228)",
+
         icon: "tailwind"
     },
     {
         name: "Express",
-        color: "#ffffff",
+        color: "rgb(228, 228, 228)",
+
         icon: "express"
     },
     {
         name: "PostgreSQL",
-        color: "#ffffff",
+        color: "rgb(228, 228, 228)",
+
         icon: "postgres"
     },
     {
         name: "MongoDB",
-        color: "#ffffff",
+        color: "rgb(228, 228, 228)",
         icon: "mongo"
     },
     {
         name: "React Native",
-        color: "##ffffff",
+        color: "rgb(140, 140, 130)",
         icon: "reactnative"
     },
     {
         name: "Jetpack Compose",
-        color: "#ffffff",
+        color: "rgb(228, 228, 228)",
+
         icon: "android"
     }
 ];
